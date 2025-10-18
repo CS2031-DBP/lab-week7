@@ -3,31 +3,48 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Demo week 7</title>
+    <title>Demo week 9</title>
+    <link rel="stylesheet" href="output.css" />
   </head>
 
   <body>
     <nav
-      class="w-full bg-slate-200 py-3 px-4 sm:px-8 flex justify-between items-center"
-    ></nav>
-    <div class="text-xl">Estudiantes Sparky</div>
-    <ul class="flex">
-      <li class="ml-6 py-2 px-4 hover:bg-slate-300 rounded-full">
-        <a href="index.html">Registro</a>
-      </li>
-    </ul>
+      class="w-full bg-slate-200 py-3 px-4 sm:px-8 ml-0.5 flex justify-between items-center"
+    >
+      <div class="text-xl">
+        Estudiantes Sparky
+        <img
+          class="w-16 md:w-32 lg:w-48"
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSH-3UXz8KU4ammJyrnMP9ZMpuk7lYuY3Yvvk5w8Akn0YYiia7FzMbab3OarX2I_hOyWUo&usqp=CAU"
+        />
+      </div>
+      <ul class="flex">
+        <li class="is-size-1 ml-6 py-4 px-4 hover:bg-slate-300 rounded-full">
+          <a href="index.html">Registro</a>
+        </li>
+        <li class="ml-6 py-4 px-4 hover:bg-slate-300 rounded-full">
+          <a href="index.html">Login</a>
+        </li>
+        <li class="ml-6 py-16 px-4 hover:bg-slate-300">
+          <a href="index.html">Logout</a>
+        </li>
+      </ul>
+    </nav>
 
-    <main>
+    <main class="flex justify-center">
       <article>
-        <h1>Register Form</h1>
-        <form id="form">
+        <h1 class="tituloAzul">Register Form For User</h1>
+        <form
+          id="form1"
+          class="grid grid-cols-2 gap-4 border-amber-200 border-1"
+        >
           <section>
             <div>
-              <label for="firstname">Firstname: </label>
+              <label for="firstname">First name: </label>
               <input type="text" name="firstname" id="firstname" required />
             </div>
             <div>
-              <label for="lastname">Lastname: </label>
+              <label for="lastname">Last name: </label>
               <input type="text" name="lastname" id="lastname" required />
             </div>
           </section>
@@ -61,10 +78,11 @@
             />
           </section>
           <section>
-            <button>Submit</button>
+            <button class="btn-primary" onclick="doAlertTs()">Submit</button>
           </section>
         </form>
       </article>
     </main>
+    <script src="index.js"></script>
   </body>
 </html>

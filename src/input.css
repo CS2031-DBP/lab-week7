@@ -1,0 +1,40 @@
+@import "tailwindcss";
+
+@layer base {
+    input {
+        border: 1;
+        border-radius: 30px;
+
+        &:hover {
+            @media (hover: hover) {
+                border-color: gray;
+                border-width: 1px;
+            }
+        }
+    }
+}
+
+@layer components {
+    .tituloVerde {
+        color: green;
+    }
+    
+    .tituloAzul {
+        color: blue;
+    }
+
+    .btn-primary {
+        border-radius: calc(infinity * 1px);
+        background-color: var(--color-violet-500);
+        padding-inline: --spacing(5);
+        padding-block: --spacing(2);
+        font-weight: var(--font-weight-semibold);
+        color: var(--color-white);
+        box-shadow: var(--shadow-md);
+        &:hover {
+        @media (hover: hover) {
+            background-color: var(--color-violet-700);
+        }
+        }
+    }
+}
